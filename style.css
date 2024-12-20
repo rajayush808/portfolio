@@ -1,0 +1,118 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f9;
+}
+
+/* Header Navigation */
+header {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    background: white;
+    color: #4e54c8;
+    transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #4e54c8;
+}
+
+main section {
+    margin: 20px 0;
+}
+
+main section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #8f94fb;
+}
+
+main section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+main p, main ul {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #4e54c8;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
