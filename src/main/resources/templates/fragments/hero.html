@@ -1,0 +1,84 @@
+<!-- fragments/hero.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="hero-section">
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">Hi there, I'm</div>
+                <h1 class="hero-title"><span class="gradient-text">Ayush Raj</span></h1>
+                <h2 class="hero-subtitle">Aspiring Software Engineer | CS Student @ BIT</h2>
+                <p class="hero-description">
+                    Solving real problems through code, learning every day, and building a future in tech—one project at a time.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="tel:+91XXXXXXXXXX" class="social-link">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                    <a href="mailto:rajayush808@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rajayush808/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/rajayush808" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-visual-inner">
+                    <div class="hero-visual-frame">
+                        <img src="/images/profile.png" alt="Profile" style="width: 90%; height: 90%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <div class="hero-visual-frame"></div>
+                    <div class="hero-visual-frame"></div>
+                </div>
+                <!-- <div class="hero-stats stats-1">
+                    <div class="hero-stats-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="hero-stats-text">
+                        <div class="hero-stats-label">Developer</div>
+                        <div class="hero-stats-value">IBM</div>
+                    </div>
+                </div>
+                <div class="hero-stats stats-2">
+                    <div class="hero-stats-icon">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <div class="hero-stats-text">
+                        <div class="hero-stats-label">Mentor</div>
+                        <div class="hero-stats-value">Topmate</div>
+                    </div>
+                </div>
+                <div class="hero-stats stats-3">
+                    <div class="hero-stats-icon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="hero-stats-text">
+                        <div class="hero-stats-label">Content Creator</div>
+                        <div class="hero-stats-value">Youtube/Udemy</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator-line">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>
