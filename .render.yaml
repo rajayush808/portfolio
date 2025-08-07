@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: personalportfolio
-    env: java
-    buildCommand: "./mvnw clean package -DskipTests"
-    startCommand: "java -jar target/personalportfolio-0.0.1-SNAPSHOT.jar"
-    plan: free
